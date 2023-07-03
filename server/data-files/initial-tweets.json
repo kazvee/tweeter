@@ -1,24 +1,24 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
+      "name": "Rear Admiral Grace Hopper",
+      "avatars": "https://imgur.com/fZkw344.png",
+      "handle": "@RAGH"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "The most damaging phrase in the language is: \"It's always been done that way.\""
     },
-    "created_at": 1461116232227
+    "created_at": 1688232038771
   },
   {
     "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
+      "name": "Amelia Earhart",
+      "avatars": "https://imgur.com/diZQRwS.png",
+      "handle": "@aearhart"
     },
-    "created_at": 1461113959088
+    "content": {
+      "text": "The most difficult thing is the decision to act. The rest is merely tenacity."
+    },
+    "created_at": 1688318438771
   }
 ]
