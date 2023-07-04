@@ -1,0 +1,40 @@
+ /* CSS properties are ordered alphabetically for convenience */
+
+ nav {
+  align-items: baseline;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100vw; /* Set width to 100% of the viewport width */
+}
+
+nav .logo {
+  align-items: baseline;
+  flex-direction: column;
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+  padding: 1em 1.5em; /* Set the top & bottom padding to 1em, set the left & right padding to 1.5em */
+}
+
+nav .write {
+  font-weight: bold;
+}
+
+nav .write-new {
+  display: flex;
+  flex-direction: column; 
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 26px;
+  padding-right: 1.5em;
+}
+
+/* custom styling for Font Awesome angle-double-down icon */
+nav i { 
+  align-self: center;
+  color: #F03C1E; 
+  padding-top: 0.25em;
+}
