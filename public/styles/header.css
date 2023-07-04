@@ -1,0 +1,24 @@
+ /* CSS properties are ordered alphabetically for convenience */
+
+ .top-header {
+  align-items: center;  
+  background-color: #40A19E;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  justify-content: center;
+  width: 100vw; /* Set width to 100% of the viewport width */
+ }
+
+.user-photo {
+  padding-top: 120px;
+ }
+
+.user-name {
+  margin: 0;
+ }
+
+.last-name {
+    font-weight: lighter;
+  }
