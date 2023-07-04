@@ -3,6 +3,7 @@
  .top-header {
   align-items: center;  
   background-color: #40A19E;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
