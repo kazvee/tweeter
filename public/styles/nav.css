@@ -7,9 +7,9 @@
   display: flex;
   height: 120px;
   justify-content: space-between;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100vw; /* Set width to 100% of the viewport width */
+  position: fixed; 
+  top: 0; 
+  width: 100vw; 
 }
 
 nav .logo {
@@ -17,7 +17,7 @@ nav .logo {
   flex-direction: column;
   font-family: 'Bungee', cursive;
   font-size: 40px;
-  padding: 1em 1.5em; /* Set the top & bottom padding to 1em, set the left & right padding to 1.5em */
+  padding: 1em 1.5em; 
 }
 
 nav .write {
@@ -32,7 +32,6 @@ nav .write-new {
   padding-right: 1.5em;
 }
 
-/* custom styling for Font Awesome angle-double-down icon */
 nav i { 
   align-self: center;
   color: #F03C1E; 
