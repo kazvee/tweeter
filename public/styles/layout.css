@@ -4,7 +4,7 @@
  * Do not modify these two selectors, please
  */
 
-html {
+ html {
   box-sizing: border-box;
 }
 
@@ -17,10 +17,18 @@ html {
  */
 
 body {
+  align-items: center;
   background-color: #f4f1ec;
   color: #545149;
+  display: flex;
+  flex-direction: column;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 24px;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
 }
 
 /*
