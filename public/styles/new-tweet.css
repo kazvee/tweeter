@@ -1,0 +1,49 @@
+ /* CSS properties are ordered alphabetically for convenience */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-tweet {
+  flex-direction: column;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+#tweet-text {
+  background-color: #f4f1ec;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;  
+  width: 60vw;
+}
+
+textarea {
+border: none;
+outline: none;
+resize: none;
+}
+
+.footer {
+  align-items: baseline;
+  border-top: 5px solid #545149;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  margin: 5px;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+  margin: 5px;
+}
