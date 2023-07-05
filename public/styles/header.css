@@ -9,7 +9,7 @@
   flex-direction: column;
   height: 520px;
   justify-content: center;
-  width: 100vw; /* Set width to 100% of the viewport width */
+  width: 100%;
  }
 
 .user-photo {
