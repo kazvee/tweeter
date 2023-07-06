@@ -47,3 +47,7 @@ button {
   font-family: 'Bungee', cursive;
   margin: 5px;
 }
+
+.warning {
+  color: #F03C1E;
+}

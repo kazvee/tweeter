@@ -1,8 +1,9 @@
 $(document).ready(function() {
+  const maxTextLength = 140;
   $(".new-tweet textarea").on("input", function() {
     const textLength = $(this).val().length;
-    console.log("Characters left: 😃", 140 - textLength);
-    let charactersRemaining = 0;
-    charactersRemaining = parseInt($(this).parent().find(".counter").text(140 - textLength));
+    const charactersRemaining = maxTextLength - textLength;
+    $(this).parent().find(".counter").text(charactersRemaining);
+    $(this).parent().find(".counter").toggleClass("warning", charactersRemaining < 0);
   });
 });
