@@ -10,6 +10,7 @@
 .new-tweet {
   flex-direction: column;
   font-family: 'Source Sans 3', sans-serif;
+  font-size: 28px;
   font-weight: bold;
   text-align: left;
 }
@@ -17,7 +18,7 @@
 #tweet-text {
   background-color: #f4f1ec;
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;  
   width: 60vw;
 }
