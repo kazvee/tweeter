@@ -1,0 +1,70 @@
+ /* CSS properties are ordered alphabetically for convenience */
+
+ .tweets-container {
+   border: 5px solid #545149;
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+   margin: 40px 20px;
+   padding: 20px;
+ }
+
+ .tweets-container:hover {
+   box-shadow: 8px 8px 2px 1px #C8CAE2;
+ }
+
+ header {
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   font-family: 'Source Sans 3', sans-serif;
+   font-size: 28px;
+   justify-content: space-between;
+ }
+
+ .user-profile {
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   padding: 18px;
+ }
+
+ .user-avatar {
+   padding-right: 18px;
+ }
+
+ .user-handle {
+   color: #C8CAE2;
+   font-weight: bold;
+   padding: 10px;
+ }
+
+ .tweets-container p {
+   font-size: 32px;
+   font-weight: bold;
+   padding: 18px;
+   text-align: left;
+ }
+
+ footer {
+   align-items: center;
+   border-top: 5px solid #545149;
+   display: flex;
+   flex-direction: row;
+   font-weight: bold;
+   justify-content: space-between;
+   padding: 12px 18px;
+ }
+
+ .tweet-age {
+   padding-top: 12px;
+ }
+
+ footer i {
+   padding: 4px;
+   color: #4056A1;
+ }
+
+ footer i:hover {
+   color: #B8860B;
+ }
