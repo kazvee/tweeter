@@ -1,39 +1,39 @@
  /* CSS properties are ordered alphabetically for convenience */
 
  nav {
-  align-items: baseline;
-  background-color: #4056A1;
-  color: #FFFFFF;
-  display: flex;
-  height: 120px;
-  justify-content: space-between;
-  position: fixed; 
-  top: 0; 
-  width: 100vw; 
-}
+   align-items: baseline;
+   background-color: #4056A1;
+   color: #FFFFFF;
+   display: flex;
+   height: 120px;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+ }
 
-nav .logo {
-  align-items: baseline;
-  flex-direction: column;
-  font-family: 'Bungee', cursive;
-  font-size: 40px;
-  padding: 1em 1.5em; 
-}
+ nav .logo {
+   align-items: baseline;
+   flex-direction: column;
+   font-family: 'Bungee', cursive;
+   font-size: 40px;
+   padding: 1em 1.5em;
+ }
 
-nav .write {
-  font-weight: bold;
-}
+ nav .write {
+   font-weight: bold;
+ }
 
-nav .write-new {
-  display: flex;
-  flex-direction: column; 
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 26px;
-  padding-right: 1.5em;
-}
+ nav .write-new {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Source Sans 3', sans-serif;
+   font-size: 26px;
+   padding-right: 1.5em;
+ }
 
-nav i { 
-  align-self: center;
-  color: #F03C1E; 
-  padding-top: 0.25em;
-}
+ nav i {
+   align-self: center;
+   color: #F03C1E;
+   padding-top: 0.25em;
+ }
