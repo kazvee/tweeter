@@ -29,7 +29,7 @@ const createTweetElement = function(data) {
       <p>${data.content.text}</p>
       <footer>
         <span class="tweet-age">
-          ${data.created_at}
+          ${timeago.format(data.created_at)}
         </span>
         <span>
         <i class="fa-solid fa-flag fa-sm"></i>
