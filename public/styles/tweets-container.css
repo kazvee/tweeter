@@ -1,6 +1,6 @@
  /* CSS properties are ordered alphabetically for convenience */
 
- .tweets-container {
+ .tweet {
    border: 5px solid #545149;
    display: flex;
    flex-direction: column;
@@ -9,7 +9,7 @@
    padding: 20px;
  }
 
- .tweets-container:hover {
+ .tweet:hover {
    box-shadow: 8px 8px 2px 1px #C8CAE2;
  }
 
@@ -39,7 +39,7 @@
    padding: 10px;
  }
 
- .tweets-container p {
+ .tweet p {
    font-size: 32px;
    font-weight: bold;
    padding: 18px;

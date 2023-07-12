@@ -4,37 +4,59 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function() {
-  
-  // Test / driver code (temporary). Eventually will get this from the server.
-  const tweetData = {
+// Fake data taken from initial-tweets.json
+
+const data = [
+  {
     "user": {
-      "name": "Eleanor Roosevelt",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@eRoosevelt"
+      "name": "Rear Admiral Grace Hopper",
+      "avatars": "https://imgur.com/fZkw344.png",
+      "handle": "@RAGH"
     },
     "content": {
-      "text": "No one can make you feel inferior without your consent."
+      "text": "The most damaging phrase in the language is: \"It's always been done that way.\""
     },
-    "created_at": 1461116232227
-  };
+    "created_at": 1688232038771
+  },
+  {
+    "user": {
+      "name": "Amelia Earhart",
+      "avatars": "https://imgur.com/diZQRwS.png",
+      "handle": "@aearhart"
+    },
+    "content": {
+      "text": "The most difficult thing is the decision to act. The rest is merely tenacity."
+    },
+    "created_at": 1688318438771
+  }
+];
 
-  const createTweetElement = function(tweetData) {
-    let $tweet = $(`
-    <article class="tweets-container">
+const renderTweets = function(tweets) {
+  // loops through tweets
+  for (const tweet of tweets) {
+    // calls createTweetElement for each tweet
+    const $tweet = createTweetElement(tweet);
+    // takes return value and appends it to the tweets container
+    $('.tweets-container').append($tweet);
+  }
+};
+
+const createTweetElement = function(data) {
+  const $tweet = $(`
+    <article class="tweet">
       <header>
         <span class="user-profile">
-          <img class="user-avatar" src="${tweetData.user.avatars}" alt="profile picture">
-            ${tweetData.user.name}
+          <img class="user-avatar" src="${data.user.avatars}" alt="profile picture">
+            ${data.user.name}
         </span>
         <span class="user-handle">
-          ${tweetData.user.handle}
+          ${data.user.handle}
         </span>
       </header>
-      <p>${tweetData.content.text}</p>
+      <p>${data.content.text}</p>
       <footer>
         <span class="tweet-age">
-          ${tweetData.created_at}
+          ${data.created_at}
         </span>
         <span>
         <i class="fa-solid fa-flag fa-sm"></i>
@@ -44,12 +66,9 @@ $(document).ready(function() {
       </footer>
     </article>
   `);
-    return $tweet;
-  };
+  return $tweet;
+};
 
-  const $tweet = createTweetElement(tweetData);
-
-  console.log($tweet);
-  $('.container').append($tweet);
-
+$(document).ready(function() {
+  renderTweets(data);
 });
