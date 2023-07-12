@@ -14,6 +14,13 @@ const renderTweets = function(tweets) {
   }
 };
 
+// Escape function to prevent Preventing XSS (Cross-Site Scripting)
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(data) {
   const $tweet = $(`
     <article class="tweet">
@@ -26,7 +33,7 @@ const createTweetElement = function(data) {
           ${data.user.handle}
         </span>
       </header>
-      <p>${data.content.text}</p>
+      <p>${escape(data.content.text)}</p>
       <footer>
         <span class="tweet-age">
           ${timeago.format(data.created_at)}
