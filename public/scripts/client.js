@@ -66,6 +66,10 @@ $(document).ready(function(tweets) {
     if (!$("#tweet-text").val().length) {
       alert("You cannot post an empty tweet! 🐧");
       return;
+    }
+    if ($("#tweet-text").val().length > 140) {
+      alert("You cannot post such a long tweet! 🦜");
+      return;
     } else {
       $.ajax({
         url: "/tweets",
