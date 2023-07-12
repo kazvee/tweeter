@@ -71,4 +71,21 @@ const createTweetElement = function(data) {
 
 $(document).ready(function() {
   renderTweets(data);
+
+  // Event listener for Submit
+  $(".new-tweet form").on("submit", (event) => {
+    event.preventDefault();
+    $.ajax({
+      url: "/tweets",
+      method: "POST",
+      data: $('#tweet-text').serialize(),
+      success: () => {
+        console.log("Success! 😎", $('#tweet-text').val());
+      },
+      error: (error) => {
+        console.log("Error! ☹️ ", error);
+      }
+    });
+  });
+
 });
