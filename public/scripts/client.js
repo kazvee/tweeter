@@ -63,17 +63,23 @@ $(document).ready(function(tweets) {
   // Event listener for Submit
   $(".new-tweet form").on("submit", (event) => {
     event.preventDefault();
-    $.ajax({
-      url: "/tweets",
-      method: "POST",
-      data: $('#tweet-text').serialize(),
-      success: () => {
-        console.log("Success! 😎", $('#tweet-text').val());
-      },
-      error: (error) => {
-        console.log("Error! ☹️ ", error);
-      }
-    });
+    if (!$("#tweet-text").val().length) {
+      alert("You cannot post an empty tweet! 🐧");
+      return;
+    } else {
+      $.ajax({
+        url: "/tweets",
+        method: "POST",
+        data: $('#tweet-text').serialize(),
+        success: () => {
+          console.log("Success! 😎", $('#tweet-text').val());
+        },
+        error: (error) => {
+          console.log("Error! ☹️ ", error);
+        }
+      });
+    }
+
   });
 
 });
