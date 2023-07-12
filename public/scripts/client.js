@@ -77,6 +77,8 @@ $(document).ready(function(tweets) {
         data: $('#tweet-text').serialize(),
         success: () => {
           console.log("Success! 😎", $('#tweet-text').val());
+          $('#tweet-text').val("");
+          $(".counter").val(140);
         },
         error: (error) => {
           console.log("Error! ☹️ ", error);
