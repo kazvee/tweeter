@@ -79,6 +79,8 @@ $(document).ready(function(tweets) {
           console.log("Success! 😎", $('#tweet-text').val());
           $('#tweet-text').val("");
           $(".counter").val(140);
+          $(".tweets-container").empty();
+          loadTweets(tweets);
         },
         error: (error) => {
           console.log("Error! ☹️ ", error);
