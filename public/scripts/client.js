@@ -4,33 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Fake data taken from initial-tweets.json
-
-const data = [
-  {
-    "user": {
-      "name": "Rear Admiral Grace Hopper",
-      "avatars": "https://imgur.com/fZkw344.png",
-      "handle": "@RAGH"
-    },
-    "content": {
-      "text": "The most damaging phrase in the language is: \"It's always been done that way.\""
-    },
-    "created_at": 1688232038771
-  },
-  {
-    "user": {
-      "name": "Amelia Earhart",
-      "avatars": "https://imgur.com/diZQRwS.png",
-      "handle": "@aearhart"
-    },
-    "content": {
-      "text": "The most difficult thing is the decision to act. The rest is merely tenacity."
-    },
-    "created_at": 1688318438771
-  }
-];
-
 const renderTweets = function(tweets) {
   // loops through tweets
   for (const tweet of tweets) {
@@ -69,8 +42,23 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
-$(document).ready(function() {
-  renderTweets(data);
+$(document).ready(function(tweets) {
+
+  // Fetch tweets from database and display on page
+  const loadTweets = () => {
+    $.ajax({
+      url: "/tweets",
+      method: "GET",
+      success: (tweets) => {
+        renderTweets(tweets);
+        console.log("Tweets are loaded! 🐦", tweets);
+      },
+      error: (error) => {
+        console.log("Error loading tweets! ☹️ ", error);
+      }
+    });
+  };
+  loadTweets(tweets);
 
   // Event listener for Submit
   $(".new-tweet form").on("submit", (event) => {
