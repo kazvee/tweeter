@@ -63,11 +63,11 @@ $(document).ready(function(tweets) {
   // Event listener for Submit
   $(".new-tweet form").on("submit", (event) => {
     event.preventDefault();
-    if (!$("#tweet-text").val().length) {
+    if (!$("#tweet-text").val().trim().length) {
       alert("You cannot post an empty tweet! 🐧");
       return;
     }
-    if ($("#tweet-text").val().length > 140) {
+    if ($("#tweet-text").val().trim().length > 140) {
       alert("You cannot post such a long tweet! 🦜");
       return;
     } else {
