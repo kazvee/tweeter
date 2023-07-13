@@ -70,31 +70,63 @@ $(document).ready(function(tweets) {
   // Event listener for Submit
   $(".new-tweet form").on("submit", (event) => {
     event.preventDefault();
+
+    // Error handling for empty tweets
     if (!$("#tweet-text").val().trim().length) {
-      alert("You cannot post an empty tweet! 🐧");
+      const errorContainer = $(".error-container");
+      if (errorContainer.is(":visible")) {
+        errorContainer.slideUp("slow", function() {
+          errorContainer.text("⚠️ Tweets cannot be empty. Please add content and try again. ⚠️");
+          errorContainer.addClass("error-message");
+          errorContainer.slideDown("slow");
+        });
+      } else {
+        errorContainer.text("⚠️ Tweets cannot be empty. Please add content and try again. ⚠️");
+        errorContainer.addClass("error-message");
+        errorContainer.slideDown("slow");
+      }
       return;
     }
+
+    // Error handling for too-long tweets
     if ($("#tweet-text").val().trim().length > 140) {
-      alert("You cannot post such a long tweet! 🦜");
+      const errorContainer = $(".error-container");
+      if (errorContainer.is(":visible")) {
+        errorContainer.slideUp("slow", function() {
+          errorContainer.text("⚠️ Tweets cannot be longer than 140 characters. Please shorten your message and try again. ⚠️");
+          errorContainer.addClass("error-message");
+          errorContainer.slideDown("slow");
+        });
+      } else {
+        errorContainer.text("⚠️ Tweets cannot be longer than 140 characters. Please shorten your message and try again. ⚠️");
+        errorContainer.addClass("error-message");
+        errorContainer.slideDown("slow");
+      }
       return;
-    } else {
-      $.ajax({
-        url: "/tweets",
-        method: "POST",
-        data: $('#tweet-text').serialize(),
-        success: () => {
-          console.log("Success! 😎", $('#tweet-text').val());
-          $('#tweet-text').val("");
-          $(".counter").val(140);
-          $(".tweets-container").empty();
-          loadTweets(tweets);
-        },
-        error: (error) => {
-          console.log("Error! ☹️ ", error);
-        }
+    }
+
+    // Clear error message and, if visible, slide it up
+    const errorContainer = $(".error-container");
+    if (!errorContainer.is(":hidden")) {
+      errorContainer.slideUp("slow", function() {
+        errorContainer.text("");
       });
     }
 
+    $.ajax({
+      url: "/tweets",
+      method: "POST",
+      data: $('#tweet-text').serialize(),
+      success: () => {
+        console.log("Success! 😎", $('#tweet-text').val());
+        $('#tweet-text').val("");
+        $(".counter").val(140);
+        $(".tweets-container").empty();
+        loadTweets(tweets);
+      },
+      error: (error) => {
+        console.log("Error! ☹️ ", error);
+      }
+    });
   });
-
 });
