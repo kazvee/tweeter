@@ -49,27 +49,28 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
+// Fetch tweets from database and display on page
+const loadTweets = () => {
+  $.ajax({
+    url: "/tweets",
+    method: "GET",
+    success: (tweets) => {
+      renderTweets(tweets);
+      console.log("Tweets are loaded! 🐦", tweets);
+    },
+    error: (error) => {
+      console.log("Error loading tweets! ☹️ ", error);
+    }
+  });
+};
+
 $(document).ready(function(tweets) {
 
   // Display and make active the new tweet text input field when `write a new tweet` button is clicked
   $(".write-new").on("click", function() {
     $("#tweet-text").trigger("focus");
   });
-
-  // Fetch tweets from database and display on page
-  const loadTweets = () => {
-    $.ajax({
-      url: "/tweets",
-      method: "GET",
-      success: (tweets) => {
-        renderTweets(tweets);
-        console.log("Tweets are loaded! 🐦", tweets);
-      },
-      error: (error) => {
-        console.log("Error loading tweets! ☹️ ", error);
-      }
-    });
-  };
+  
   loadTweets(tweets);
 
   // Event listener for Submit
