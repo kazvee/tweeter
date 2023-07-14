@@ -132,6 +132,25 @@ $(document).ready(function(tweets) {
     });
   });
 
+  // Display `back to top` button on page scroll down
+  const backToTopButton = $('.back-to-top');
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() > 300) {
+      backToTopButton.addClass('show');
+    } else {
+      backToTopButton.removeClass('show');
+    }
+  });
+
+  // On click, scroll page up and make active the the new tweet text input field
+  backToTopButton.on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, '300');
+    $("#tweet-text").trigger("focus");
+  });
+
   loadTweets(tweets);
   
 });
