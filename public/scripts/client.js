@@ -68,8 +68,6 @@ $(document).ready(function(tweets) {
   $(".write-new").on("click", function() {
     $("#tweet-text").trigger("focus");
   });
-  
-  loadTweets(tweets);
 
   // Event listener for Submit
   $(".new-tweet form").on("submit", (event) => {
@@ -133,4 +131,7 @@ $(document).ready(function(tweets) {
       }
     });
   });
+
+  loadTweets(tweets);
+  
 });
