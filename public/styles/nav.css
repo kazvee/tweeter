@@ -1,7 +1,7 @@
  /* CSS properties are ordered alphabetically for convenience */
 
  nav {
-   align-items: baseline;
+   align-items: center;
    background-color: #4056A1;
    color: #FFFFFF;
    display: flex;
@@ -13,8 +13,6 @@
  }
 
  nav .logo {
-   align-items: baseline;
-   flex-direction: column;
    font-family: 'Bungee', cursive;
    font-size: 40px;
    padding: 1em 1.5em;
@@ -25,15 +23,31 @@
  }
 
  nav .write-new {
-   display: flex;
-   flex-direction: column;
+   background-color: #40A19E;
+   border-radius: 30px;
+   box-shadow: 0 4px 12px -2px #334581;
    font-family: 'Source Sans 3', sans-serif;
    font-size: 26px;
-   padding-right: 1.5em;
+   margin: 0px 40px;
+   padding: 20px;
  }
 
+ button.write-new {
+  transition: all 0.03s linear;
+}
+
+button.write-new:hover {
+  background-color: #33817E;
+  cursor: pointer;
+  
+}
+
+button.write-new:active {
+  box-shadow: 0 0 6px #8593C3;
+  transform: translateY(2px);
+}
+
  nav i {
-   align-self: center;
-   color: #F03C1E;
-   padding-top: 0.25em;
+  color: #4056A1;
+  padding-left: 0.4em;
  }
