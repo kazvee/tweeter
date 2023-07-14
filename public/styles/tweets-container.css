@@ -39,9 +39,10 @@
    padding: 10px;
  }
 
- .tweet p {
+ .new-tweet-text {
    font-size: 32px;
    font-weight: bold;
+   overflow-wrap: break-word;   
    padding: 18px;
    text-align: left;
  }

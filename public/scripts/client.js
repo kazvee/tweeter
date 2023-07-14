@@ -33,7 +33,7 @@ const createTweetElement = function(data) {
           ${data.user.handle}
         </span>
       </header>
-      <p>${escape(data.content.text)}</p>
+      <p class="new-tweet-text">${escape(data.content.text)}</p>
       <footer>
         <span class="tweet-age">
           ${timeago.format(data.created_at)}
