@@ -51,6 +51,11 @@ const createTweetElement = function(data) {
 
 $(document).ready(function(tweets) {
 
+  // Display and make active the new tweet text input field when `write a new tweet` button is clicked
+  $(".write-new").on("click", function() {
+    $("#tweet-text").trigger("focus");
+  });
+
   // Fetch tweets from database and display on page
   const loadTweets = () => {
     $.ajax({
