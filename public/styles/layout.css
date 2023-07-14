@@ -4,6 +4,8 @@
  * Do not modify these two selectors, please
  */
 
+ /* CSS properties are ordered alphabetically for convenience */ 
+
 html {
   box-sizing: border-box;
 }
@@ -36,3 +38,43 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.back-to-top {
+  background: tomato;
+  border-radius: 50%;
+  bottom: -20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: block;
+  height: 80px;
+  opacity: 0;
+  padding-top: 25px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 80px;
+}
+
+.back-to-top:focus {
+  color: #fff;
+}
+
+.back-to-top.show {
+  bottom: 20px;
+  color: #fff;
+  opacity: 1;
+  right: 20px;
+}
+
+.back-to-top.show:hover {
+  bottom: 30px;
+  color: #fff;
+  opacity: 1;
+}
+
+.fa-solid.fa-chevrons-up {
+  bottom: 30px;
+  color: #fff;
+  opacity: 1;
+}
