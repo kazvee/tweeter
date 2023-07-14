@@ -4,12 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// Show tweets array by creating and appending their HTML elements to the display container
 const renderTweets = function(tweets) {
-  // loops through tweets
   for (const tweet of tweets) {
-    // calls createTweetElement for each tweet
     const $tweet = createTweetElement(tweet);
-    // takes return value and appends it to the tweets container
     $('.tweets-container').prepend($tweet);
   }
 };
