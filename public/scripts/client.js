@@ -19,6 +19,8 @@ const escape = function(str) {
   return div.innerHTML;
 };
 
+// Takes in a tweet data object as a parameter and uses jQuery to create a tweet article element
+// with the complete HTML structure of the provided tweet data
 const createTweetElement = function(data) {
   const $tweet = $(`
     <article class="tweet">
@@ -47,7 +49,7 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
-// Fetch tweets from database and display on page
+// AJAX GET request to the "/tweets" endpoint
 const loadTweets = () => {
   $.ajax({
     url: "/tweets",
@@ -62,6 +64,7 @@ const loadTweets = () => {
   });
 };
 
+// jQuery method used to ensure the code inside the callback function only executes after the DOM has finished loading
 $(document).ready(function(tweets) {
 
   // Display and make active the new tweet text input field when `write a new tweet` button is clicked
@@ -115,6 +118,7 @@ $(document).ready(function(tweets) {
       });
     }
 
+    // AJAX POST request to the "/tweets" endpoint
     $.ajax({
       url: "/tweets",
       method: "POST",
@@ -152,5 +156,5 @@ $(document).ready(function(tweets) {
   });
 
   loadTweets(tweets);
-  
+
 });
