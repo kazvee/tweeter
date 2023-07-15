@@ -7,13 +7,9 @@
    color: #FFFFFF;
    display: flex;
    flex-direction: column;
-   height: 520px;
+   height: 400px;
    justify-content: center;
    width: 100%;
- }
-
- .user-photo {
-   padding-top: 120px;
  }
 
  .user-name {
