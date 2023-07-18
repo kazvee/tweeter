@@ -2,19 +2,18 @@
 
  nav {
    align-items: center;
-   background-color: #4056A1;
    color: #FFFFFF;
    display: flex;
    height: 120px;
    justify-content: space-between;
    top: 0;
-   width: 100%;
+   width: 100vw;
  }
 
  nav .logo {
    font-family: 'Bungee', cursive;
    font-size: 40px;
-   padding: 1em 1.5em;
+   padding: 1.5em;
  }
 
  nav .write {
@@ -49,3 +48,20 @@ button.write-new:active {
   color: #4056A1;
   padding-left: 0.4em;
  }
+
+/* Tablet Styles  */
+@media only screen and (min-width: 768px) {
+ nav {
+   background-color: #40A19E;
+   background-image: url("../images/brushed-alum.png");
+ }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+ nav {
+   background-color: #4056A1;
+   background-image: none;
+   position: fixed;
+ } 
+}

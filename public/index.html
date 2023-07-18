@@ -42,19 +42,20 @@
   </nav>
 
   <!-- Header -->
-  <header class="top-header">
-    <div class="user-photo">
-      <img src="images/profile-hex.png" alt="user photo">
-    </div>
-    <div class="user-name">
-      <h2 class="user-name">Tweety <span class="last-name">Bird</span></h2>
-    </div>
-  </header>
+  <div class="user-details">
+    <header class="top-header">
+      <div class="user-photo">
+        <img src="images/profile-hex.png" alt="user photo">
+      </div>
+      <div class="user-name">
+        <h2 class="user-name">Tweety <span class="last-name">Bird</span></h2>
+      </div>
+    </header>
+  </div>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
       <form action="/tweets" method="POST">
 
          <!-- This div will display any applicable error messages -->
