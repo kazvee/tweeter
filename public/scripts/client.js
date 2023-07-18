@@ -1,10 +1,9 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+/**
+ * Render tweets by creating and appending their HTML elements to the display container.
+ *
+ * @param {Array<Object>} tweets - An array of tweet objects.
+ * @returns {void}
  */
-
-// Show tweets array by creating and appending their HTML elements to the display container
 const renderTweets = function(tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
@@ -12,15 +11,24 @@ const renderTweets = function(tweets) {
   }
 };
 
-// Escape function to prevent Preventing XSS (Cross-Site Scripting)
+/**
+ * Escape special characters in a string to prevent XSS (Cross-Site Scripting) attacks.
+ *
+ * @param {string} str - The string to be escaped.
+ * @returns {string} The escaped string.
+ */
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
-// Takes in a tweet data object as a parameter and uses jQuery to create a tweet article element
-// with the complete HTML structure of the provided tweet data
+/**
+ * Create a tweet article element with the complete HTML structure of the provided tweet data object.
+ *
+ * @param {Object} data - The tweet data object.
+ * @returns {jQuery} The jQuery object representing the tweet article element.
+ */
 const createTweetElement = function(data) {
   const $tweet = $(`
     <article class="tweet">
@@ -49,7 +57,11 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
-// AJAX GET request to the "/tweets" endpoint
+/**
+ * Send an AJAX GET request to the "/tweets" endpoint to load tweets.
+ *
+ * @returns {void}
+ */
 const loadTweets = () => {
   $.ajax({
     url: "/tweets",
@@ -64,19 +76,19 @@ const loadTweets = () => {
   });
 };
 
-// jQuery method used to ensure the code inside the callback function only executes after the DOM has finished loading
+// jQuery method used to ensure the code inside the callback function only executes after the DOM has finished loading.
 $(document).ready(function(tweets) {
 
-  // Display and make active the new tweet text input field when `write a new tweet` button is clicked
+  // Display and make active the new tweet text input field when `write a new tweet` button is clicked.
   $(".write-new").on("click", function() {
     $("#tweet-text").trigger("focus");
   });
 
-  // Event listener for Submit
+  // Event listener for Submit.
   $(".new-tweet form").on("submit", (event) => {
     event.preventDefault();
 
-    // Error handling for empty tweets
+    // Error handling for empty tweets.
     if (!$("#tweet-text").val().trim().length) {
       const errorContainer = $(".error-container");
       if (errorContainer.is(":visible")) {
@@ -93,7 +105,7 @@ $(document).ready(function(tweets) {
       return;
     }
 
-    // Error handling for too-long tweets
+    // Error handling for too-long tweets.
     if ($("#tweet-text").val().trim().length > 140) {
       const errorContainer = $(".error-container");
       if (errorContainer.is(":visible")) {
@@ -110,7 +122,7 @@ $(document).ready(function(tweets) {
       return;
     }
 
-    // Clear error message and, if visible, slide it up
+    // Clear error message and, if visible, slide it up.
     const errorContainer = $(".error-container");
     if (!errorContainer.is(":hidden")) {
       errorContainer.slideUp("slow", function() {
@@ -118,7 +130,11 @@ $(document).ready(function(tweets) {
       });
     }
 
-    // AJAX POST request to the "/tweets" endpoint
+    /**
+     * Send an AJAX POST request to the "/tweets" endpoint to post a new tweet.
+     *
+     * @returns {void}
+     */
     $.ajax({
       url: "/tweets",
       method: "POST",
@@ -136,7 +152,7 @@ $(document).ready(function(tweets) {
     });
   });
 
-  // Display `back to top` button on page scroll down
+  // Display or hide the `back to top` button depending on the scroll position.
   const backToTopButton = $('.back-to-top');
   $(window).on('scroll', function() {
     if ($(window).scrollTop() > 300) {
@@ -146,7 +162,12 @@ $(document).ready(function(tweets) {
     }
   });
 
-  // On click, scroll page up and make active the the new tweet text input field
+  /**
+   * Scroll the page to the top and make active the new tweet text input field when the `back to top` button is clicked.
+   *
+   * @param {Event} event - The click event.
+   * @returns {void}
+   */
   backToTopButton.on('click', function(event) {
     event.preventDefault();
     $('html, body').animate({
