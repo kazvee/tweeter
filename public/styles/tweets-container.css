@@ -4,7 +4,6 @@
    border: 5px solid #545149;
    display: flex;
    flex-direction: column;
-   margin-top: 50px;
    margin: 40px 20px;
    padding: 20px;
  }
@@ -42,7 +41,7 @@
  .new-tweet-text {
    font-size: 32px;
    font-weight: bold;
-   overflow-wrap: break-word;   
+   overflow-wrap: break-word;
    padding: 18px;
    text-align: left;
  }

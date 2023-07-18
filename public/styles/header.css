@@ -1,13 +1,13 @@
  /* CSS properties are ordered alphabetically for convenience */
 
  .user-details {
-  width: 100%; 
-}
+   width: 100%;
+ }
 
  .top-header {
    align-items: center;
    background-color: #40A19E;
-   background-image: url("../images/brushed-alum.png"); 
+   background-image: url("../images/brushed-alum.png");
    color: #FFFFFF;
    display: flex;
    flex-direction: column;
@@ -24,10 +24,10 @@
    font-weight: lighter;
  }
 
-/* Desktop Styles */
-@media only screen and (min-width: 1024px) {
-  .user-details {
-    margin: 10px 100px;
-    width: 40%; 
-  }
-}
+ /* Desktop Styles */
+ @media only screen and (min-width: 1024px) {
+   .user-details {
+     margin: 10px 100px;
+     width: 40%;
+   }
+ }

@@ -56,10 +56,10 @@
    color: #F03C1E;
  }
 
-.error-message {
-  border: 2px solid #F03C1E;
-  color: #F03C1E;
-  justify-content: flex-start;
-  margin: 10px;
-  padding: 10px;
-}
+ .error-message {
+   border: 2px solid #F03C1E;
+   color: #F03C1E;
+   justify-content: flex-start;
+   margin: 10px;
+   padding: 10px;
+ }

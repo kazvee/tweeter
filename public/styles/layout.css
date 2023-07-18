@@ -4,7 +4,7 @@
  * Do not modify these two selectors, please
  */
 
- /* CSS properties are ordered alphabetically for convenience */ 
+/* CSS properties are ordered alphabetically for convenience */
 
 html {
   box-sizing: border-box;
@@ -80,21 +80,21 @@ main {
   opacity: 1;
 }
 
- /* Tablet Styles  */
- @media only screen and (min-width: 768px) {
-   body {
-     align-items: center;
-     flex-direction: column;
-     justify-content: center;
-   }
- }
+/* Tablet Styles  */
+@media only screen and (min-width: 768px) {
+  body {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
- /* Desktop Styles */
- @media only screen and (min-width: 1024px) {
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
   body {
     align-items: flex-start;
     flex-direction: row;
     justify-content: flex-start;
     padding-top: 200px;
   }
- }
+}
