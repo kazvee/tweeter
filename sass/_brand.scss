@@ -13,19 +13,26 @@ $warning-error-red: #F03C1E;
 $white-text-color: #FFFFFF;
 $write-new-button-box-shadow-purple: #334581;
 
-@mixin write-new-button-font {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 26px;
-}
-
-@mixin nav-logo-font {
-  font-family: 'Bungee', cursive;
-  font-size: 40px;
+@mixin align-vertically {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @mixin body-font {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 24px;
+}
+
+@mixin button-and-counter-font {
+  font-family: 'Bungee', cursive;
+  margin: 5px;
+}
+
+@mixin nav-logo-font {
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
 }
 
 @mixin new-tweet-font {
@@ -39,7 +46,7 @@ $write-new-button-box-shadow-purple: #334581;
   font-size: 28px;
 }
 
-@mixin button-and-counter-font {
-  font-family: 'Bungee', cursive;
-  margin: 5px;
+@mixin write-new-button-font {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 26px;
 }

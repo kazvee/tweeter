@@ -5,14 +5,11 @@
 }
 
 .top-header {
-  align-items: center;
+  @include align-vertically;
   background-color: $light-teal-background-color;
   background-image: $brushed-aluminum-background-image;
   color: $white-text-color;
-  display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
   width: 100%;
 }
 
