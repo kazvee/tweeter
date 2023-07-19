@@ -8,43 +8,43 @@ nav {
   justify-content: space-between;
   top: 0;
   width: 100vw;
-}
 
-nav .logo {
-  @include nav-logo-font;
-  padding: 1.5em;
-}
+  .logo {
+    @include nav-logo-font;
+    padding: 1.5em;
+  }
 
-nav .write {
-  font-weight: bold;
-}
+  .write {
+    font-weight: bold;
+  }
 
-nav .write-new {
-  background-color: $light-teal-background-color;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px -2px $write-new-button-box-shadow-purple;
-  margin: 0px 40px;
-  padding: 20px;
-  @include write-new-button-font;
-}
+  .write-new {
+    background-color: $light-teal-background-color;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px -2px $write-new-button-box-shadow-purple;
+    margin: 0px 40px;
+    padding: 20px;
+    @include write-new-button-font;
+  }
 
-button.write-new {
-  transition: all 0.03s linear;
-}
+  i {
+    color: $purple;
+    padding-left: 0.4em;
+  }
 
-button.write-new:hover {
-  background-color: $dark-teal-background-color;
-  cursor: pointer;
-}
+  button.write-new {
+    transition: all 0.03s linear;
+  }
 
-button.write-new:active {
-  box-shadow: 0 0 6px $light-purple-shadow;
-  transform: translateY(2px);
-}
+  button.write-new:hover {
+    background-color: $dark-teal-background-color;
+    cursor: pointer;
+  }
 
-nav i {
-  color: $purple;
-  padding-left: 0.4em;
+  button.write-new:active {
+    box-shadow: 0 0 6px $light-purple-shadow;
+    transform: translateY(2px);
+  }
 }
 
 /* Tablet Styles  */
