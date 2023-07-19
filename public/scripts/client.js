@@ -47,9 +47,9 @@ const createTweetElement = function(data) {
           ${timeago.format(data.created_at)}
         </span>
         <span>
-        <i class="fa-solid fa-flag fa-sm"></i>
-        <i class="fa-solid fa-retweet fa-sm"></i>
-        <i class="fa-solid fa-heart fa-sm"></i>
+        <i class="fa-solid fa-flag fa-sm" alt="flag tweet"></i>
+        <i class="fa-solid fa-retweet fa-sm" alt="retweet"></i>
+        <i class="fa-solid fa-heart fa-sm" alt="like tweet"></i>
         </span>
       </footer>
     </article>
