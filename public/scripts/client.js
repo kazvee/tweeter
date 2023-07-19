@@ -68,7 +68,6 @@ const loadTweets = () => {
     method: "GET",
     success: (tweets) => {
       renderTweets(tweets);
-      console.log("Tweets are loaded! 🐦", tweets);
     },
     error: (error) => {
       console.log("Error loading tweets! ☹️ ", error);
