@@ -4,8 +4,6 @@
  * Do not modify these two selectors, please
  */
 
-/* CSS properties are ordered alphabetically for convenience */
-
 @import "brand";
 
 html {
@@ -23,13 +21,12 @@ html {
  */
 
 body {
+  @include body-font;
   align-items: center;
   background-color: $offwhite-background-color;
   color: $dark-grey-border-color;
   display: flex;
   flex-direction: row;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 24px;
   justify-content: flex-start;
 }
 

@@ -12,3 +12,34 @@ $tomato-background-color: tomato;
 $warning-error-red: #F03C1E;
 $white-text-color: #FFFFFF;
 $write-new-button-box-shadow-purple: #334581;
+
+@mixin write-new-button-font {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 26px;
+}
+
+@mixin nav-logo-font {
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+}
+
+@mixin body-font {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 24px;
+}
+
+@mixin new-tweet-font {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@mixin tweet-header-font {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 28px;
+}
+
+@mixin button-and-counter-font {
+  font-family: 'Bungee', cursive;
+  margin: 5px;
+}
