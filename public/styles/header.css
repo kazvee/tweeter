@@ -1,17 +1,16 @@
-/* CSS properties are ordered alphabetically for convenience */
 .user-details {
   width: 100%;
 }
 
 .top-header {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #40A19E;
   background-image: url("../images/brushed-alum.png");
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
   width: 100%;
 }
 

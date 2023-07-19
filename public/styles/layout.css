@@ -3,7 +3,6 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-/* CSS properties are ordered alphabetically for convenience */
 html {
   box-sizing: border-box;
 }
@@ -18,13 +17,13 @@ html {
  * Global layout stuff
  */
 body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
   align-items: center;
   background-color: #f4f1ec;
   color: #545149;
   display: flex;
   flex-direction: row;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 24px;
   justify-content: flex-start;
 }
 
