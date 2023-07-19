@@ -1,65 +1,64 @@
- /* CSS properties are ordered alphabetically for convenience */
+/* CSS properties are ordered alphabetically for convenience */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+}
 
- .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin: 40px;
-   text-align: center;
- }
+.new-tweet {
+  flex-direction: column;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
 
- .new-tweet {
-   flex-direction: column;
-   font-family: 'Source Sans 3', sans-serif;
-   font-size: 28px;
-   font-weight: bold;
-   padding: 20px;
-   text-align: left;
-   width: 100%;
- }
+#tweet-text {
+  background-color: #f4f1ec;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
 
- #tweet-text {
-   background-color: #f4f1ec;
-   display: flex;
-   font-size: 18px;
-   font-weight: bold;
-   width: 100%;
- }
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
 
- textarea {
-   border: none;
-   outline: none;
-   resize: none;
- }
+.footer {
+  align-items: baseline;
+  border-top: 5px solid #545149;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+}
 
- .footer {
-   align-items: baseline;
-   border-top: 5px solid #545149;
-   display: flex;
-   justify-content: space-between;
-   padding-top: 0.5em;
- }
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: "Bungee", cursive;
+  margin: 5px;
+}
 
- button {
-   background-color: #4056A1;
-   color: #FFFFFF;
-   font-family: 'Bungee', cursive;
-   margin: 5px;
- }
+.counter {
+  font-family: "Bungee", cursive;
+  margin: 5px;
+}
 
- .counter {
-   font-family: 'Bungee', cursive;
-   margin: 5px;
- }
+.warning {
+  color: #F03C1E;
+}
 
- .warning {
-   color: #F03C1E;
- }
-
- .error-message {
-   border: 2px solid #F03C1E;
-   color: #F03C1E;
-   justify-content: flex-start;
-   margin: 10px;
-   padding: 10px;
- }
+.error-message {
+  border: 2px solid #F03C1E;
+  color: #F03C1E;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
+}

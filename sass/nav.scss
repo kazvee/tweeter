@@ -1,0 +1,67 @@
+ /* CSS properties are ordered alphabetically for convenience */
+
+ nav {
+   align-items: center;
+   color: #FFFFFF;
+   display: flex;
+   height: 120px;
+   justify-content: space-between;
+   top: 0;
+   width: 100vw;
+ }
+
+ nav .logo {
+   font-family: 'Bungee', cursive;
+   font-size: 40px;
+   padding: 1.5em;
+ }
+
+ nav .write {
+   font-weight: bold;
+ }
+
+ nav .write-new {
+   background-color: #40A19E;
+   border-radius: 30px;
+   box-shadow: 0 4px 12px -2px #334581;
+   font-family: 'Source Sans 3', sans-serif;
+   font-size: 26px;
+   margin: 0px 40px;
+   padding: 20px;
+ }
+
+ button.write-new {
+   transition: all 0.03s linear;
+ }
+
+ button.write-new:hover {
+   background-color: #33817E;
+   cursor: pointer;
+ }
+
+ button.write-new:active {
+   box-shadow: 0 0 6px #8593C3;
+   transform: translateY(2px);
+ }
+
+ nav i {
+   color: #4056A1;
+   padding-left: 0.4em;
+ }
+
+ /* Tablet Styles  */
+ @media only screen and (min-width: 768px) {
+   nav {
+     background-color: #40A19E;
+     background-image: url("../images/brushed-alum.png");
+   }
+ }
+
+ /* Desktop Styles */
+ @media only screen and (min-width: 1024px) {
+   nav {
+     background-color: #4056A1;
+     background-image: none;
+     position: fixed;
+   }
+ }
