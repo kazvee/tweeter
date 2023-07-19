@@ -29,8 +29,8 @@ module.exports = {
    
     const avatars = {
     
-      Female: ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png"],
-      Male: ["https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
+      Female: ["https://i.imgur.com/1exUqyt.png","https://i.imgur.com/XkKBjwX.png","https://i.imgur.com/4mk6Xqr.png","https://i.imgur.com/JgROeKL.png", "https://i.imgur.com/vC205al.png"],
+      Male: ["https://i.imgur.com/n2cPfO6.png","https://i.imgur.com/2Y1D55u.png","https://i.imgur.com/UXxjrcf.png","https://i.imgur.com/M0nQyy5.png", "https://i.imgur.com/fSXPdQN.png"]
     
     }
     
