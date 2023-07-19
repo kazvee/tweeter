@@ -41,7 +41,7 @@ main {
   border-radius: 50%;
   bottom: -20px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #FFFFFF;
   display: block;
   height: 80px;
   opacity: 0;
@@ -54,25 +54,25 @@ main {
 }
 
 .back-to-top:focus {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .back-to-top.show {
   bottom: 20px;
-  color: #fff;
+  color: #FFFFFF;
   opacity: 1;
   right: 20px;
 }
 
 .back-to-top.show:hover {
   bottom: 30px;
-  color: #fff;
+  color: #FFFFFF;
   opacity: 1;
 }
 
 .fa-solid.fa-chevrons-up {
   bottom: 30px;
-  color: #fff;
+  color: #FFFFFF;
   opacity: 1;
 }
 

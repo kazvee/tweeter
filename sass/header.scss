@@ -1,14 +1,16 @@
  /* CSS properties are ordered alphabetically for convenience */
 
+ @import "brand";
+
  .user-details {
    width: 100%;
  }
 
  .top-header {
    align-items: center;
-   background-color: #40A19E;
-   background-image: url("../images/brushed-alum.png");
-   color: #FFFFFF;
+   background-color: $light-teal-background-color;
+   background-image: $brushed-aluminum-background-image;
+   color: $white-text-color;
    display: flex;
    flex-direction: column;
    height: 400px;

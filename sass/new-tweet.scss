@@ -1,5 +1,7 @@
  /* CSS properties are ordered alphabetically for convenience */
 
+ @import "brand";
+
  .container {
    display: flex;
    flex-direction: column;
@@ -19,7 +21,7 @@
  }
 
  #tweet-text {
-   background-color: #f4f1ec;
+   background-color: $offwhite-background-color;
    display: flex;
    font-size: 18px;
    font-weight: bold;
@@ -34,15 +36,15 @@
 
  .footer {
    align-items: baseline;
-   border-top: 5px solid #545149;
+   border-top: 5px solid $dark-grey-border-color;
    display: flex;
    justify-content: space-between;
    padding-top: 0.5em;
  }
 
  button {
-   background-color: #4056A1;
-   color: #FFFFFF;
+   background-color: $purple;
+   color: $white-text-color;
    font-family: 'Bungee', cursive;
    margin: 5px;
  }
@@ -53,12 +55,12 @@
  }
 
  .warning {
-   color: #F03C1E;
+   color: $warning-error-red;
  }
 
  .error-message {
-   border: 2px solid #F03C1E;
-   color: #F03C1E;
+   border: 2px solid $warning-error-red;
+   color: $warning-error-red;
    justify-content: flex-start;
    margin: 10px;
    padding: 10px;

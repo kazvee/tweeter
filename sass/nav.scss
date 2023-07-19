@@ -1,8 +1,10 @@
  /* CSS properties are ordered alphabetically for convenience */
 
+ @import "brand";
+
  nav {
    align-items: center;
-   color: #FFFFFF;
+   color: $white-text-color;
    display: flex;
    height: 120px;
    justify-content: space-between;
@@ -21,9 +23,9 @@
  }
 
  nav .write-new {
-   background-color: #40A19E;
+   background-color: $light-teal-background-color;
    border-radius: 30px;
-   box-shadow: 0 4px 12px -2px #334581;
+   box-shadow: 0 4px 12px -2px $write-new-button-box-shadow-purple;
    font-family: 'Source Sans 3', sans-serif;
    font-size: 26px;
    margin: 0px 40px;
@@ -35,32 +37,32 @@
  }
 
  button.write-new:hover {
-   background-color: #33817E;
+   background-color: $dark-teal-background-color;
    cursor: pointer;
  }
 
  button.write-new:active {
-   box-shadow: 0 0 6px #8593C3;
+   box-shadow: 0 0 6px $light-purple-shadow;
    transform: translateY(2px);
  }
 
  nav i {
-   color: #4056A1;
+   color: $purple;
    padding-left: 0.4em;
  }
 
  /* Tablet Styles  */
  @media only screen and (min-width: 768px) {
    nav {
-     background-color: #40A19E;
-     background-image: url("../images/brushed-alum.png");
+     background-color: $light-teal-background-color;
+     background-image: $brushed-aluminum-background-image;
    }
  }
 
  /* Desktop Styles */
  @media only screen and (min-width: 1024px) {
    nav {
-     background-color: #4056A1;
+     background-color: $purple;
      background-image: none;
      position: fixed;
    }

@@ -1,7 +1,9 @@
  /* CSS properties are ordered alphabetically for convenience */
 
+ @import "brand";
+
  .tweet {
-   border: 5px solid #545149;
+   border: 5px solid $dark-grey-border-color;
    display: flex;
    flex-direction: column;
    margin: 40px 20px;
@@ -9,7 +11,7 @@
  }
 
  .tweet:hover {
-   box-shadow: 8px 8px 2px 1px #C8CAE2;
+   box-shadow: 8px 8px 2px 1px $lighter-purple;
  }
 
  header {
@@ -33,7 +35,7 @@
  }
 
  .user-handle {
-   color: #C8CAE2;
+   color: $lighter-purple;
    font-weight: bold;
    padding: 10px;
  }
@@ -48,7 +50,7 @@
 
  footer {
    align-items: center;
-   border-top: 5px solid #545149;
+   border-top: 5px solid $dark-grey-border-color;
    display: flex;
    flex-direction: row;
    font-weight: bold;
@@ -62,9 +64,9 @@
 
  footer i {
    padding: 4px;
-   color: #4056A1;
+   color: $purple;
  }
 
  footer i:hover {
-   color: #B8860B;
+   color: $mustard-yellow;
  }

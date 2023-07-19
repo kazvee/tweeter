@@ -6,6 +6,8 @@
 
 /* CSS properties are ordered alphabetically for convenience */
 
+@import "brand";
+
 html {
   box-sizing: border-box;
 }
@@ -22,8 +24,8 @@ html {
 
 body {
   align-items: center;
-  background-color: #f4f1ec;
-  color: #545149;
+  background-color: $offwhite-background-color;
+  color: $dark-grey-border-color;
   display: flex;
   flex-direction: row;
   font-family: 'Source Sans 3', sans-serif;
@@ -41,11 +43,11 @@ main {
  */
 
 .back-to-top {
-  background: tomato;
+  background: $tomato-background-color;
   border-radius: 50%;
   bottom: -20px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  box-shadow: 4px 4px 10px $back-to-top-button-shadow-black;
+  color: $white-text-color;
   display: block;
   height: 80px;
   opacity: 0;
@@ -58,25 +60,25 @@ main {
 }
 
 .back-to-top:focus {
-  color: #fff;
+  color: $white-text-color;
 }
 
 .back-to-top.show {
   bottom: 20px;
-  color: #fff;
+  color: $white-text-color;
   opacity: 1;
   right: 20px;
 }
 
 .back-to-top.show:hover {
   bottom: 30px;
-  color: #fff;
+  color: $white-text-color;
   opacity: 1;
 }
 
 .fa-solid.fa-chevrons-up {
   bottom: 30px;
-  color: #fff;
+  color: $white-text-color;
   opacity: 1;
 }
 
