@@ -6,7 +6,7 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 *View of 2-colummn desktop layout:*
 
-!["Screenshot of 2-columm desktop layout"](/docs/2-column-layout.jpg)
+!["Screenshot of 2-columm desktop layout"](/docs/2-column.jpg)
 
 *View of single-column layout for smaller devices:*
 
@@ -18,7 +18,7 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 *View of Back to Top button:*
 
-!["Screenshot of Back to Top button"](/docs/back-to-top-button.jpg)
+!["Screenshot of Back to Top button"](/docs/back-to-top.jpg)
 
 *View of Empty Tweet warning message:*
 
@@ -28,9 +28,6 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 !["Screenshot of Tweet is Too Long warning message"](/docs/too-long-tweet-warning.jpg)
 
-*Verified User with Green Checkmark in profile:*
-
-!["Screenshot of Verified User with Green Checkmark in profile"](/docs/verified-user.jpg)
 
 ## Purpose
 
@@ -53,7 +50,7 @@ This project was created by [me](https://github.com/karvok) as part of my learni
   - Click the lightly-animated `Write a new tweet` button to bring the text input field into focus and start tweeting
 - Scroll to Top button
   - Scroll back up with one click of the `Back to Top` button to activate the text input field and compose a new tweet
-- Users can add a `Green Checkmark` (`✅`) to their profiles *completely free of charge* 😏
+- Users can add a `Green Checkmark` (`✅`) to their profiles *completely free of charge!* 😏
 
 ## Planned Improvements
 - Tweet reaction buttons (`Flag`/`Retweet`/`Like`) have hover-over animation effect but are not yet implemented
