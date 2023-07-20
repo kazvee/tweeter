@@ -104,7 +104,7 @@ $(document).ready(function(tweets) {
       return;
     }
 
-    // Error handling for too-long tweets.
+    // Error handling for tweets that are too long.
     if ($("#tweet-text").val().trim().length > 140) {
       const errorContainer = $(".error-container");
       if (errorContainer.is(":visible")) {
@@ -175,6 +175,7 @@ $(document).ready(function(tweets) {
     $("#tweet-text").trigger("focus");
   });
 
+  // First function to get called once the DOM has finished loading
   loadTweets(tweets);
 
 });
