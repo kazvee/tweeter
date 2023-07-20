@@ -97,6 +97,10 @@ footer i:hover {
   .user-profile {
     padding: none;
   }
+  .user-avatar {
+    padding-right: 8px;
+    transform: scale(70%);
+  }
 }
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

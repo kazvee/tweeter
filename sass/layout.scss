@@ -86,6 +86,26 @@ main {
     flex-direction: column;
     justify-content: center;
   }
+
+  .back-to-top {
+    transform: scale(50%);
+  }
+
+  .back-to-top:focus {
+    transform: scale(50%);
+  }
+
+  .back-to-top.show {
+    transform: scale(50%);
+  }
+
+  .back-to-top.show:hover {
+    transform: scale(50%);
+  }
+
+  .fa-solid.fa-chevrons-up {
+    transform: scale(50%);
+  }
 }
 
 /* Tablet Styles */
