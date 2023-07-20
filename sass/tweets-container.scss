@@ -40,7 +40,7 @@ header {
 .new-tweet-text {
   font-size: 32px;
   font-weight: bold;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   padding: 18px;
   text-align: left;
 }
@@ -84,7 +84,7 @@ footer {
 
   .new-tweet-text {
     font-size: 16px;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     padding: 10px;
     text-align: left;
   }
@@ -106,5 +106,11 @@ footer {
   .user-profile {
     padding: none;
   }
+}
 
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .new-tweet-text {
+    overflow-wrap: anywhere;
+  }
 }
