@@ -43,10 +43,13 @@ nav button.write-new:active {
 /* Smartphone Styles */
 @media only screen and (min-width: 320px) and (max-width: 420px) {
   nav {
-    background-color: #40A19E;
+    background-color: #4056A1;
     background-image: none;
   }
-  .write-new {
+  nav .logo {
+    font-size: 28px;
+  }
+  nav .write-new {
     display: none;
   }
 }

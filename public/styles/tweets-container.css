@@ -80,7 +80,7 @@ footer i:hover {
   .new-tweet-text {
     font-size: 16px;
     word-break: break-all;
-    padding: 10px;
+    padding: 8px;
     text-align: left;
   }
   footer {
@@ -95,11 +95,19 @@ footer i:hover {
     padding-top: 2px;
   }
   .user-profile {
-    padding: none;
+    padding: 0px;
+    color: #4056A1;
+    font-weight: bold;
+    font-size: 16px;
   }
   .user-avatar {
-    padding-right: 8px;
-    transform: scale(70%);
+    padding: 2px;
+    transform: scale(60%);
+  }
+  .user-handle {
+    color: #B8860B;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 /* Tablet Styles */

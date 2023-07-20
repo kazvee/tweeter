@@ -85,7 +85,7 @@ footer {
   .new-tweet-text {
     font-size: 16px;
     word-break: break-all;
-    padding: 10px;
+    padding: 8px;
     text-align: left;
   }
 
@@ -104,13 +104,24 @@ footer {
   }
 
   .user-profile {
-    padding: none;
+    padding: 0px;
+    color: $purple;
+    font-weight: bold;
+    font-size: 16px;
+
   }
 
   .user-avatar {
-    padding-right: 8px;
-    transform: scale(70%);
+    padding: 2px;
+    transform: scale(60%);
   }
+
+  .user-handle {
+    color: $mustard-yellow;
+    padding: 10px;
+    font-size: 14px;
+  }
+
 }
 
 /* Tablet Styles */

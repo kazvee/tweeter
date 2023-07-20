@@ -50,14 +50,19 @@ nav {
 /* Smartphone Styles */
 @media only screen and (min-width: 320px) and (max-width: 420px) {
   nav {
-    background-color: $light-teal-background-color;
+    background-color: $purple;
     background-image: none;
+
+    .logo {
+      font-size: 28px;
+    }
+
+    .write-new {
+      display: none;
+    }
   }
 
-  .write-new {
-    display: none;
-  }
-}
+ }
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
