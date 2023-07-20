@@ -64,3 +64,37 @@ footer i:hover {
 .tweet-age {
   padding-top: 12px;
 }
+
+/* Smartphone Styles */
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .tweet {
+    border: 2px solid #545149;
+    display: flex;
+    flex-direction: column;
+    margin: 4px 2px;
+    padding: 2px;
+  }
+  header {
+    font-size: 18px;
+  }
+  .new-tweet-text {
+    font-size: 16px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    text-align: left;
+  }
+  footer {
+    border-top: 2px solid #545149;
+  }
+  footer i {
+    transform: scale(70%);
+    padding: 1px;
+  }
+  footer .tweet-age {
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  .user-profile {
+    padding: none;
+  }
+}

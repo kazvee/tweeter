@@ -40,8 +40,18 @@ nav button.write-new:active {
   transform: translateY(2px);
 }
 
-/* Tablet Styles  */
-@media only screen and (min-width: 768px) {
+/* Smartphone Styles */
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  nav {
+    background-color: #40A19E;
+    background-image: none;
+  }
+  .write-new {
+    display: none;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
     background-color: #40A19E;
     background-image: url("../images/brushed-alum.png");
