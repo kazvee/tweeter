@@ -19,12 +19,12 @@ nav {
   }
 
   .write-new {
+    @include write-new-button-font;
     background-color: $light-teal-background-color;
     border-radius: 30px;
     box-shadow: 0 4px 12px -2px $write-new-button-box-shadow-purple;
     margin: 0px 40px;
     padding: 20px;
-    @include write-new-button-font;
   }
 
   i {

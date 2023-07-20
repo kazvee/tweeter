@@ -16,13 +16,13 @@ nav .write {
   font-weight: bold;
 }
 nav .write-new {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
   background-color: #40A19E;
   border-radius: 30px;
   box-shadow: 0 4px 12px -2px #334581;
   margin: 0px 40px;
   padding: 20px;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 26px;
 }
 nav i {
   color: #4056A1;

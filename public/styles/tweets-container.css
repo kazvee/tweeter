@@ -39,9 +39,9 @@ header {
 .new-tweet-text {
   font-size: 32px;
   font-weight: bold;
-  word-break: break-all;
   padding: 18px;
   text-align: left;
+  word-break: break-all;
 }
 
 footer {
@@ -79,26 +79,26 @@ footer i:hover {
   }
   .new-tweet-text {
     font-size: 16px;
-    word-break: break-all;
     padding: 8px;
     text-align: left;
+    word-break: break-all;
   }
   footer {
     border-top: 2px solid #545149;
   }
   footer i {
-    transform: scale(70%);
     padding: 1px;
+    transform: scale(70%);
   }
   footer .tweet-age {
     font-size: 14px;
     padding-top: 2px;
   }
   .user-profile {
-    padding: 0px;
     color: #4056A1;
-    font-weight: bold;
     font-size: 16px;
+    font-weight: bold;
+    padding: 0px;
   }
   .user-avatar {
     padding: 2px;
@@ -106,8 +106,8 @@ footer i:hover {
   }
   .user-handle {
     color: #B8860B;
-    padding: 10px;
     font-size: 14px;
+    padding: 10px;
   }
 }
 /* Tablet Styles */
