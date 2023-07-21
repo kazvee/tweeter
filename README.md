@@ -2,29 +2,34 @@
 
 Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and AJAX for the front-end, and Node and Express for the back-end.
 
+
 ## Final Product
 
-*View of 2-colummn desktop layout:*
+**View of 2-column desktop layout:**
 
-!["Screenshot of 2-columm desktop layout"](/docs/2-column.jpg)
+!["View of 2-column desktop layout"](/docs/2-column.jpg)
 
-*View of single-column layout for smaller devices:*
+**View of single-column layout for Tablets:**
 
-!["Screenshot of single-column layout"](/docs/single-column-layout.jpg)
+!["Screenshot of single-column layout"](/docs/tablet-layout.jpg)
 
-*View of new tweet form:*
+**View of single-column layout for Smartphones:**
 
-!["Screenshot of new tweet form"](/docs/new-tweet.jpg)
+!["Screenshot of single-column layout"](/docs/smartphone-layout.jpg)
 
-*View of Back to Top button:*
+**View of new tweet form with `Write a new tweet` toggle button (top right):**
 
-!["Screenshot of Back to Top button"](/docs/back-to-top.jpg)
+!["Screenshot of new tweet form with `Write a new tweet` toggle button (top right)"](/docs/new-tweet.jpg)
 
-*View of Empty Tweet warning message:*
+**View of `Back to Top` button (bottom right):**
+
+!["Screenshot of `Back to Top` button (bottom right)"](/docs/back-to-top.jpg)
+
+**View of Empty Tweet warning message:**
 
 !["Screenshot of Empty Tweet warning message"](/docs/empty-tweet-warning.jpg)
 
-*View of Tweet is Too Long warning message:*
+**View of Tweet is Too Long warning message:**
 
 !["Screenshot of Tweet is Too Long warning message"](/docs/too-long-tweet-warning.jpg)
 
@@ -33,16 +38,18 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 This project was created by [me](https://github.com/karvok) as part of my learnings at [Lighthouse Labs](https://www.lighthouselabs.ca/en/web-development-flex-program).
 
+
 ## Features
 
 - Single Page Application
   - Seamless user experience, the page is not refreshed during GET or POST tweet requests
 - Responsive Design
-  - Site supports various device sizes, transisions smoothly between different screen resolution views
+  - Site supports various device sizes, transitions smoothly between Smartphone, Tablet, and Desktop screen views
 - Real-time Tweet Length Counter
-  - Users receive real-time visual feedback of the character-length of their tweet as they type
+  - Users receive real-time visual feedback on the length of their tweet as they type
 - Content Validation
   - Error handling for empty tweets or tweets that are too long
+
 
 ## Stretch / Extra Features
 
@@ -52,18 +59,11 @@ This project was created by [me](https://github.com/karvok) as part of my learni
   - Scroll back up with one click of the `Back to Top` button to activate the text input field and compose a new tweet
 - Users can add a `Green Checkmark` (`✅`) to their profiles *completely free of charge!* 😏
 
+
 ## Planned Improvements
 - Tweet reaction buttons (`Flag`/`Retweet`/`Like`) have hover-over animation effect but are not yet implemented
-- Development to increase tweet length limit to 14**1** characters projected to begin early next year 😉
+- Development to increase tweet length limit to 14**1** characters projected to begin early next year
 
-## Getting Started
-
-1. Fork this repository to your own Github account.
-2. Clone your fork onto your local device.
-3. Install all dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
-5. Start tweeting! 🐦
 
 ## Dependencies
 
@@ -73,3 +73,13 @@ This project was created by [me](https://github.com/karvok) as part of my learni
 - [Chance](https://www.npmjs.com/package/chance)
 - [SASS](https://www.npmjs.com/package/sass)
 - [jQuery](https://jquery.com/)
+
+
+## Getting Started
+
+1. Fork this repository to your own Github account.
+2. Clone your fork onto your local device.
+3. Install all dependencies using the `npm install` command.
+3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+4. Go to <http://localhost:8080/> in your browser.
+5. Start tweeting! 🐦
