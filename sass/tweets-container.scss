@@ -42,7 +42,7 @@ header {
   font-weight: bold;
   padding: 18px;
   text-align: left;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 footer {
@@ -86,7 +86,7 @@ footer {
     font-size: 16px;
     padding: 8px;
     text-align: left;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   footer {
@@ -125,6 +125,6 @@ footer {
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .new-tweet-text {
-    word-break: break-all;
+    word-break: break-word;
   }
 }
