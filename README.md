@@ -44,9 +44,9 @@ This project was created by [me](https://github.com/karvok) as part of my learni
 - Single Page Application
   - Seamless user experience, the page is not refreshed during GET or POST tweet requests
 - Responsive Design
-  - Site supports various device sizes, transitions smoothly between Smartphone, Tablet, and Desktop screen views
+  - Supports various device sizes, transitions smoothly between Smartphone, Tablet, and Desktop views
 - Real-time Tweet Length Counter
-  - Users receive real-time visual feedback on the length of their tweet as they type
+  - Users receive visual feedback on the length of their tweet as they type
 - Content Validation
   - Error handling for empty tweets or tweets that are too long
 
