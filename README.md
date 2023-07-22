@@ -5,6 +5,12 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 ## Final Product
 
+**Video of functionality**
+
+<video src="https://user-images.githubusercontent.com/109990289/198e575d-ce26-4269-bf38-631e0c7a2a39.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:640px;">
+</video>
+
+
 **View of 2-column desktop layout:**
 
 !["View of 2-column desktop layout"](/docs/2-column.jpg)
