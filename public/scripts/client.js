@@ -80,6 +80,7 @@ $(document).ready(function(tweets) {
 
   // Display and make active the new tweet text input field when `write a new tweet` button is clicked.
   $(".write-new").on("click", function() {
+    $(".new-tweet").slideToggle("slow");
     $("#tweet-text").trigger("focus");
   });
 
