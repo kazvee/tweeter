@@ -23,7 +23,7 @@
 }
 
 /* Smartphone Styles */
-@media only screen and (min-width: 320px) and (max-width: 420px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .top-header {
     display: none;
   }
