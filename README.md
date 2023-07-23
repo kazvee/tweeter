@@ -1,15 +1,14 @@
-# Tweeter Project
+# Tweeter 🐣
 
 Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and AJAX for the front-end, and Node and Express for the back-end.
 
 
 ## Final Product
 
-**Video of functionality**
+**Video of functionality:**
 
 <video src="https://user-images.githubusercontent.com/109990289/198e575d-ce26-4269-bf38-631e0c7a2a39.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 width-fit" style="max-height:640px;">
 </video>
-
 
 **View of 2-column desktop layout:**
 
@@ -42,7 +41,7 @@ Tweeter is a single-page Twitter clone. It uses HTML, CSS, SASS, JS, jQuery, and
 
 ## Purpose
 
-This project was created by [me](https://github.com/karvok) as part of my learnings at [Lighthouse Labs](https://www.lighthouselabs.ca/en/web-development-flex-program).
+This project was created by [me](https://github.com/kazvee) as part of my learnings at [Lighthouse Labs](https://www.lighthouselabs.ca/en/web-development-flex-program).
 
 
 ## Features
@@ -67,6 +66,7 @@ This project was created by [me](https://github.com/karvok) as part of my learni
 
 
 ## Planned Improvements
+
 - Tweet reaction buttons (`Flag`/`Retweet`/`Like`) have hover-over animation effect but are not yet implemented
 - Development to increase tweet length limit to 14**1** characters projected to begin early next year
 
